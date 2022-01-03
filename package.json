@@ -9,9 +9,9 @@
     "url": "https://github.com/webrtc/apprtc.git"
   },
   "scripts": {
-    "test": "grunt",
-    "build": "grunt build",
-    "lint": "grunt runLinting"
+    "lint": "grunt runLinting",
+    "test": "grunt runUnitTests",
+    "build": "grunt build --verbose"
   },
   "devDependencies": {
     "eslint-config-webrtc": ">=1.0.0",
@@ -35,6 +35,7 @@
     "webrtc-adapter": "^7.7.0"
   },
   "dependencies": {
+    "coffeescript": "^2.6.1",
     "pako": "^1.0.10"
   }
 }
