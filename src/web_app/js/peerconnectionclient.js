@@ -8,13 +8,13 @@
 
 /* More information about these options at jshint.com/docs/options */
 
-/* globals trace, mergeConstraints, parseJSON, iceCandidateType,
+/* globals mergeConstraints, parseJSON, iceCandidateType,
    maybePreferAudioReceiveCodec, maybePreferVideoReceiveCodec,
    maybePreferAudioSendCodec, maybePreferVideoSendCodec,
    maybeSetAudioSendBitRate, maybeSetVideoSendBitRate,
    maybeSetAudioReceiveBitRate, maybeSetVideoSendInitialBitRate,
    maybeSetVideoReceiveBitRate, maybeSetVideoSendInitialBitRate,
-   maybeRemoveVideoFec, maybeSetOpusOptions, DOMException */
+   maybeRemoveVideoFec, maybeSetOpusOptions */
 
 /* exported PeerConnectionClient */
 

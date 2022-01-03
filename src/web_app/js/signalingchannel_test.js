@@ -8,8 +8,8 @@
 
 /* More information about these options at jshint.com/docs/options */
 
-/* globals  describe, expect, it, beforeEach, afterEach, fail, WebSocket:true,
-   XMLHttpRequest:true, SignalingChannel, webSockets:true, xhrs:true,
+/* globals  describe, expect, it, beforeEach, afterEach, fail,
+   SignalingChannel, webSockets:true, xhrs:true,
    FAKE_WSS_URL, FAKE_WSS_POST_URL, FAKE_ROOM_ID, FAKE_CLIENT_ID,
    MockXMLHttpRequest, MockWebSocket */
 
@@ -21,17 +21,21 @@ describe('Signaling Channel Test', function() {
     xhrs = [];
 
     this.realWebSocket = WebSocket;
+    // eslint-disable-next-line no-global-assign
     WebSocket = MockWebSocket;
 
     this.channel =
         new SignalingChannel(FAKE_WSS_URL, FAKE_WSS_POST_URL);
 
     this.realXMLHttpRequest = XMLHttpRequest;
+    // eslint-disable-next-line no-global-assign
     XMLHttpRequest = MockXMLHttpRequest;
   });
 
   afterEach(function() {
+    // eslint-disable-next-line no-global-assign
     WebSocket = this.realWebSocket;
+    // eslint-disable-next-line no-global-assign
     XMLHttpRequest = this.realXMLHttpRequest;
   });
 

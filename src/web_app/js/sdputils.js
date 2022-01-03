@@ -8,7 +8,7 @@
 
 /* More information about these options at jshint.com/docs/options */
 
-/* globals  adapter, trace */
+/* globals */
 /* exported setCodecParam, iceCandidateType,
    maybeSetOpusOptions, maybePreferAudioReceiveCodec,
    maybePreferAudioSendCodec, maybeSetAudioReceiveBitRate,
