@@ -24,6 +24,7 @@
         "no-console": 0,
         "no-else-return": 2,
         "no-eval": 2,
+        "no-prototype-builtins": 0,
         "no-multi-spaces": 2,
         "no-multiple-empty-lines": [2, {"max": 2}],
         "no-shadow": 0,
