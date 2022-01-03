@@ -10,15 +10,31 @@
 
 /* exported calculateFps, setUpFullScreen, fullScreenElement, isFullScreen,
    requestIceServers, sendAsyncUrlRequest, sendSyncUrlRequest,
-   randomString, trace, $, queryStringToDictionary */
+   randomString, $, queryStringToDictionary, trace */
 
 'use strict';
 
+// eslint-disable-next-line no-redeclare
 function $(selector) {
   return document.querySelector(selector);
 }
 
+// eslint-disable-next-line no-redeclare
+function trace(text) {
+  // This function is used for logging.
+  if (text[text.length - 1] === '\n') {
+    text = text.substring(0, text.length - 1);
+  }
+  if (window.performance) {
+    var now = (window.performance.now() / 1000).toFixed(3);
+    console.log(now + ': ' + text);
+  } else {
+    console.log(text);
+  }
+}
+
 // Returns the URL query key-value pairs as a dictionary object.
+// eslint-disable-next-line no-redeclare
 function queryStringToDictionary(queryString) {
   var pairs = queryString.slice(1).split('&');
 
@@ -200,17 +216,4 @@ function calculateFps(videoElement, decodedFrames, startTime, remoteOrLocal,
     }
   }
   return parseInt(fps);
-}
-
-function trace(text) {
-  // This function is used for logging.
-  if (text[text.length - 1] === '\n') {
-    text = text.substring(0, text.length - 1);
-  }
-  if (window.performance) {
-    var now = (window.performance.now() / 1000).toFixed(3);
-    console.log(now + ': ' + text);
-  } else {
-    console.log(text);
-  }
 }

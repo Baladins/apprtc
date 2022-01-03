@@ -8,8 +8,7 @@
 
 /* More information about these options at jshint.com/docs/options */
 
-/* globals describe, expect, it, filterIceServersUrls, randomString,
-   queryStringToDictionary */
+/* globals describe, expect, it, filterIceServersUrls, randomString */
 
 'use strict';
 

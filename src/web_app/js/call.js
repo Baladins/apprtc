@@ -8,14 +8,15 @@
 
 /* More information about these options at jshint.com/docs/options */
 
-/* globals trace, requestIceServers, sendUrlRequest, sendAsyncUrlRequest,
+/* globals requestIceServers, sendUrlRequest, sendAsyncUrlRequest,
    SignalingChannel, PeerConnectionClient, setupLoopback,
-   parseJSON, apprtc, Constants */
+   parseJSON */
 
 /* exported Call */
 
 'use strict';
 
+// eslint-disable-next-line no-redeclare
 var Call = function(params) {
   this.params_ = params;
   this.roomServer_ = params.roomServer || '';

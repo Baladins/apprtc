@@ -8,7 +8,7 @@
 
 /* More information about these options at jshint.com/docs/options */
 
-/* globals parseJSON, trace, sendUrlRequest, RemoteWebSocket */
+/* globals parseJSON, sendUrlRequest */
 /* exported SignalingChannel */
 
 'use strict';

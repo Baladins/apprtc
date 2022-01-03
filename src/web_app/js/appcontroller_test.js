@@ -8,8 +8,8 @@
 
 /* More information about these options at jshint.com/docs/options */
 
-/* globals AppController, describe, expect, it, beforeEach, afterEach,
-   UI_CONSTANTS, $, RoomSelection:true, Call:true */
+/* globals describe, expect, it, beforeEach, afterEach,
+   UI_CONSTANTS, $, RoomSelection:true */
 
 'use strict';
 

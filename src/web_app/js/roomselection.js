@@ -8,11 +8,12 @@
 
 /* More information about these options at jshint.com/docs/options */
 
-/* globals randomString, Storage, parseJSON */
+/* globals randomString, parseJSON */
 /* exported RoomSelection */
 
 'use strict';
 
+// eslint-disable-next-line no-redeclare
 var RoomSelection = function(roomSelectionDiv,
   uiConstants, recentRoomsKey, setupCompletedCallback) {
   this.roomSelectionDiv_ = roomSelectionDiv;

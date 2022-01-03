@@ -12,6 +12,7 @@
 
 'use strict';
 
+// eslint-disable-next-line no-redeclare
 var Storage = function() {};
 
 // Get a value from local browser storage. Calls callback with value.

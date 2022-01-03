@@ -8,14 +8,10 @@
 
 /* More information about these options at jshint.com/docs/options */
 
-/* globals trace, InfoBox, setUpFullScreen, isFullScreen, RoomSelection, $ */
-/* exported AppController, remoteVideo */
+/* globals InfoBox, setUpFullScreen, isFullScreen, RoomSelection, $ */
+/* exported AppController */
 
 'use strict';
-
-// TODO(jiayl): remove |remoteVideo| once the chrome browser tests are updated.
-// Do not use in the production code.
-var remoteVideo = $('#remote-video');
 
 // Keep this in sync with the HTML element id attributes. Keep it sorted.
 var UI_CONSTANTS = {
@@ -51,6 +47,8 @@ var UI_CONSTANTS = {
 };
 
 // The controller that connects the Call with the UI.
+
+// eslint-disable-next-line no-redeclare
 var AppController = function(loadingParams) {
   trace('Initializing; server= ' + loadingParams.roomServer + '.');
   trace('Initializing; room=' + loadingParams.roomId + '.');
